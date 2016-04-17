@@ -290,9 +290,10 @@ Rust; for interop with GNU software built using the [MinGW/MSYS2
 toolchain] use the GNU build.
 
 MSVC builds of Rust additionally require an [installation of Visual
-Studio 2013 (or later)][vs] so rustc can use its linker. Make sure to check
-the "C++ tools" option. No additional software installation is
-necessary for basic use of the GNU build.
+Studio 2013 (or later) or the Visual C++ Build Tools 2015][vs] so 
+rustc can use its linker. Make sure to check the "C++ tools" option.
+No additional software installation is necessary for basic use of
+the GNU build.
 
 Rust's support for the GNU ABI is more mature, and is recommended for
 typical uses, so that's what `rustup` installs by default. The MSVC
@@ -410,7 +411,7 @@ platform of your choice:
 
 <a name="vs2015">†</a>
 MSVC builds of `rustup` additionally require an [installation of
-Visual Studio 2015](https://www.visualstudio.com/downloads). Make sure
+Visual Studio 2015 or the Visual C++ Build Tools 2015][vs]. Make sure
 to check the "C++ tools" option. No additional software installation
 is necessary for basic use of the GNU build.
 
@@ -419,6 +420,8 @@ currently rustup only builds on nightly Rust, and that after
 installation the rustup toolchains will supercede any pre-existing
 toolchains by prepending `~/.cargo/bin` to the `PATH` environment
 variable.
+
+[vs]: https://www.visualstudio.com/downloads
 
 ## Security
 
